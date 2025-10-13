@@ -1,0 +1,15 @@
+# build
+*.o
+*.a
+*.so
+distances
+build/
+bin/
+# editors
+*.swp
+.tags
+# logs/temp
+*.log
+*.tmp
+# dataset/outputs (lägg till vid behov)
+outputs/
