@@ -39,9 +39,10 @@ void parse_args(
       }
     }
   }
-
-  if ( isdigit(argv[argc]) ) {
-    d = atoi(argv[argc]);
+  
+  const char *arg = argv[argc - 1];
+  if ( isdigit(arg[0]) ) {
+    d = atoi(&arg[0]);
     printf("Using exponent %d\n", d);
   }
 }
